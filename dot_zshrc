@@ -1,0 +1,44 @@
+# Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/Users/piperunner/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Added by Antigravity
+export PATH="/Users/piperunner/.antigravity/antigravity/bin:$PATH"
+
+# ---------------------------------------------------------------------------- #
+#                               PROMPT n PLUGINS                               #
+# ---------------------------------------------------------------------------- #
+
+# Zinit
+source $(brew --prefix)/opt/zinit/zinit.zsh
+
+# Load Oh My Zsh library
+zinit snippet OMZL::history.zsh
+zinit snippet OMZL::completion.zsh
+
+# Oh My Zsh Plugins
+zinit snippet OMZP::command-not-found
+zinit snippet OMZP::git
+# zinit snippet OMZP::history-substring-search
+zinit snippet OMZP::magic-enter
+zinit snippet OMZP::last-working-dir
+
+# Third-party Plugins
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-syntax-highlighting
+
+# Starship prompt
+eval "$(starship init zsh)"
