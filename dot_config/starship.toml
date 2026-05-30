@@ -19,6 +19,7 @@ add_newline = false
 palette = 'catppuccin_mocha'
 
 [fill]
+disabled=false
 symbol = ''
 
 [directory]
