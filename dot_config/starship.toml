@@ -4,22 +4,22 @@ format = """
 $directory\
 $git_branch\
 $git_state\
-$git_status"""
+$git_status\
+$line_break\
+$character"""
 
 right_format = """
 $conda\
 $rust\
 $nodejs\
-$python\
-$line_break\
-$character"""
+$python"""
 
 add_newline = false
 
 palette = 'catppuccin_mocha'
 
 [fill]
-symbol = ' '
+symbol = ''
 
 [directory]
 style = "fg:red"
