@@ -14,7 +14,7 @@ cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
 
-fullscreen = true
+fullscreen = false
 maximize = true
 
 # cyberdream theme for ghostty
