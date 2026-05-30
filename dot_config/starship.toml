@@ -4,15 +4,15 @@ format = """
 $directory\
 $git_branch\
 $git_state\
-$git_status\
-$line_break\
-$character"""
+$git_status"""
 
 right_format = """
 $conda\
 $rust\
 $nodejs\
-$python"""
+$python\
+$line_break\
+$character"""
 
 add_newline = false
 
@@ -67,7 +67,7 @@ symbol = ""
 format = '[ $symbol( $context) ]($style)'
 
 [conda]
-symbol = "  "
+symbol = ""
 format = '[$symbol$environment ]($style)'
 ignore_base = false
 
@@ -76,8 +76,8 @@ disabled = false
 
 [character]
 disabled = false
-success_symbol = '[](bold fg:green)'
-error_symbol = '[](bold fg:red)'
+success_symbol = '[󱞩](bold fg:green)'
+error_symbol = '[󱞩](bold fg:red)'
 vimcmd_symbol = '[](bold fg:green)'
 vimcmd_replace_one_symbol = '[](bold fg:lavender)'
 vimcmd_replace_symbol = '[](bold fg:lavender)'
