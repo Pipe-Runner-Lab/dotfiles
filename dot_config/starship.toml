@@ -12,6 +12,7 @@ $conda\
 $rust\
 $nodejs\
 $python\
+$lua\
 $line_break\
 [╰󰁔](white) """
 
@@ -29,7 +30,7 @@ disabled = false
 
 [directory]
 style = "fg:red"
-format = "[ $path]($style)"
+format = " [$path]($style) "
 truncation_length = 3
 truncation_symbol = "…/"
 
