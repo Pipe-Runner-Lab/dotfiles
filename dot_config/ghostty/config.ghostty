@@ -1,5 +1,4 @@
 title="Terminal"
-# theme = dark:cyberdream,light:cyberdream-light
 
 font-family = "JetBrainsMono Nerd Font Mono Propo"
 font-feature = +liga
@@ -8,10 +7,15 @@ font-size=16
 
 window-padding-x = 16
 window-padding-balance = true
+window-padding-color = extend-always
 adjust-cell-height = 14
 
-shell-integration-features = no-cursor
 cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
+
+fullscreen = true
+maximize = true
 
 # cyberdream theme for ghostty
 palette = 0=#16181a
