@@ -29,18 +29,18 @@ style = 'fg:purple'
 disabled = false
 
 [directory]
-style = "fg:red"
-format = " [$path]($style) "
+style = "fg:lavender"
+format = "  [$path]($style) "
 truncation_length = 3
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
 style = "fg:yellow"
-format = ' [](bright-black) [$symbol $branch ]($style)'
+format = '[](surface2) [$symbol $branch ]($style)'
 
 [git_status]
-style = "fg:yellow"
+style = "fg:peach"
 conflicted = "="
 ahead = "⇡"
 behind = "⇣"
@@ -52,7 +52,7 @@ modified = "!"
 staged = "+"
 renamed = "»"
 deleted = "✘"
-format = '[($all_status$ahead_behind )]($style)'
+format = '[(\[$all_status$ahead_behind\] )]($style)'
 
 [git_state]
 format = "\\([$state( $progress_current/$progress_total)]($style)\\) "
