@@ -49,14 +49,18 @@ zinit snippet OMZL::completion.zsh
 # Oh My Zsh Plugins
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::git
-# zinit snippet OMZP::history-substring-search
 zinit snippet OMZP::magic-enter
 zinit snippet OMZP::last-working-dir
+# zinit load 'zsh-users/zsh-history-substring-search'
+# zinit ice wait atload'_history_substring_search_config'
+
+
 
 # Third-party Plugins
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
+zinit light mfaerevaag/wd
 
 # Starship prompt
 eval "$(starship init zsh)"
